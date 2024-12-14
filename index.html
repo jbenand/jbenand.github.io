@@ -3,3 +3,78 @@ layout: home
 title: My website
 subtitle: This is where I will tell my friends way too much about me
 ---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lights, Camera and Inequality : The Story of Women in Cinema</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="{{ site.baseurl }}/" class="navbar-brand">{{ site.title }}</a>
+      <ul class="navbar-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="{{ site.baseurl }}/about.html">About Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="intro" class="section">
+    <div class="container">
+      <h1>Introduction</h1>
+      <p>Cinema is so much more than just entertainment. It’s a mirror (albeit sometimes a distorted one) of our society, its norms, its values… and, unfortunately, its inequalities. Since its early days, women on screen haven’t always had the spotlight: often confined to secondary or stereotypical roles, they’ve long remained in the shadows of male characters.
+
+        But things are changing, right ? Or maybe not so much ? That’s exactly what we’re here to explore. We’ll dive into how women are represented in films: Are there more female roles today ? Are they better written ? Are modern movies truly more “feminist,” or is that just a trendy buzzword ?
+        
+        To find out, we’re going to dig into the data. We’ll count actresses, see if they outshine their male counterparts, analyze film themes, and even measure how many pass the famous Bechdel test. We’ll also tackle more specific questions: Do films from certain countries or genres do better than others ? Do feminist blockbusters even exist ?
+        
+        And, because it’s always fun, we’ll try to answer the big question: What exactly makes a “feminist film” ? By exploring the data, we hope to find answers… or maybe even uncover new questions.
+        
+        So, buckle up for a journey through the history of cinema and what it reveals (or doesn't) about the role of women on screen.
+        
+        To dive into these questions, we have access to data on over 80,000 films, covering details like release year, country of production, genre, plots, actor information, and much more.
+      </p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p>A brief introduction about you or your work. Edit this section directly in the `index.html` file.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <p>Highlight some of your key projects here. You can add project details or links directly here.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Include your contact details, email, or social media links here. You can also add a form.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
