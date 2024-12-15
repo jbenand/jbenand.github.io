@@ -1,0 +1,41 @@
+.center img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .map img {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .centered-container {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+}
+
+.image-container {
+    display: flex;
+    margin: 0 -10px; /* Add negative margin to create space between images */
+}
+
+.image-container img {
+    width: 30%;
+    margin: 0 70px; /* Add space on both sides of each image */
+    height: auto;
+}
+
+figure {
+  display:inline-block;
+  text-align: center;
+  margin: 30px;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+  margin: 20px;
+}
