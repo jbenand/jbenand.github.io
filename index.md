@@ -25,3 +25,11 @@ To dive into these questions, we have access to data on over 80,000 films, cover
             Fallen angels by Wong Kar Wai
         </figcaption>
 </figure>
+
+# General Analysis
+
+## Proportion of actresses over time
+
+To ease into things, we'll start by finding the average number of actresses and actors per year and per movie. It's not the most exciting part but hey, we've got to start somewhere...
+
+{% include_relative assets/plots/nb_actors.html %}
