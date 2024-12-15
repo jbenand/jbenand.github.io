@@ -19,7 +19,7 @@ So, buckle up for a journey through the history of cinema and what it reveals (o
 To dive into these questions, we have access to data on over 80,000 films, covering details like release year, country of production, genre, plots, actor information, and much more.
 
 
-<figure class="center>
+<figure class="center">
     <img src="/assets/img/fallen_angels.jpg" alt="Fallen angels by Wong Kar Wai" class="center" width="600">
         <figcaption>
             Fallen angels by Wong Kar Wai
