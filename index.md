@@ -37,3 +37,11 @@ To ease into things, we'll start by finding the average number of actresses and 
 Each curve shows the average number of male and female actors per movie. Although the number of female actors per movie seems to have increased over the year, it remains lower than the number of male actors on average since 1900 (there are on average twice as many male actors on screen as female actors).
 
 {% include_relative assets/plots/female_to_male_actor_ratio_per_country.html %}
+
+Now, looking at the female-to-male ratio among actors in the top five movie-producing countries since 1920, the picture isn't great for women with the ratio usually staying below 1. Some big swings in the early decades can reflect the social and economic changes of the time. Since the 1960s, things start to level off at quite a low ratio and unfortunately, there's been no real progress since. There is some variation across countries with for example France and the UK that occasionnally have slightly better ratios than the US and India. Overall, this graph paints a picture of slow, uneven progress when it comess to the representation of women in global cinema.
+
+But maybe this ratio swings in favor of actresses depending on the genre of the movie ! Let's take a look at the gender repartition for different genders.
+
+{% include_relative assets/plots/repartition_per_genre.html %}
+
+Well... actresses are still in the minority, no matter the genre or the era !
