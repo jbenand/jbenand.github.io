@@ -42,8 +42,8 @@ Now, looking at the female-to-male ratio among actors in the top five movie-prod
 
 But maybe this ratio swings in favor of actresses depending on the genre of the movie ! Let's take a look at the gender repartition for different genders.
 
-[Click here to view the MHTML file](assets/plots/test2.mhtml )
 
+<iframe src="assets/plots/test4.htm" width="100%" height="600px"></iframe>
 
 
 Well... actresses are still in the minority, no matter the genre or the era !
