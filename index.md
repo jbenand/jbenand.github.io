@@ -33,3 +33,7 @@ To dive into these questions, we have access to data on over 80,000 films, cover
 To ease into things, we'll start by finding the average number of actresses and actors per year and per movie. It's not the most exciting part but hey, we've got to start somewhere...
 
 {% include_relative assets/plots/nb_actors.html %}
+
+Each curve shows the average number of male and female actors per movie. Although the number of female actors per movie seems to have increased over the year, it remains lower than the number of male actors on average since 1900 (there are on average twice as many male actors on screen as female actors).
+
+{% include_relative assets/plots/actress_ratio.html %}
