@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Lights, Camera, Inequality: The Story of Women in Cinema"
-cover-img: /assets/img/fallen_angels.jpg
+cover-img: /assets/img/feminism_home_page.jpg
 ---
 
 # Introduction
