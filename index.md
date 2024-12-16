@@ -64,4 +64,15 @@ How can we measure the representation of women in movies ? One metric that is co
 
 Sounds straightforward, right ? You'd think most movies would pass with flying colors, but surprisingly, many don't ! This test isn't about calling out individual films but rather highlighting larger trends in storytelling and representation. Now, passing the Bechdel Test doesn't automatically mean a movie is feminist or inclusive, nor does fialing it make a film inherently problematic. Instead, it's a way to spark discussion about ho women are portrayed on screen and whether they are given meaningful rles beyond supporting male characters.
 
+Two different models:
+
+<div class="button-container">
+  <button id="button1">Model 1</button>
+  <button id="button2">Model 2</button>
+</div>
+
+<div id="plot-container">
+  <iframe id="plot-frame" src="assets/plots/feminist_movies_interative_gpt.html"></iframe>
+</div>
+
 ## 
