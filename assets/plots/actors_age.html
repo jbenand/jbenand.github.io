@@ -31,41 +31,48 @@
     <div id="age-distribution-graph"></div>
 
     <script>
-        // Periods for the slider
         const periods = [
             "1930-1940", "1940-1950", "1950-1960", "1960-1970",
             "1970-1980", "1980-1990", "1990-2000", "2000-2010"
         ];
-
-        // Variable to hold the data loaded from JSON
+    
         let allData = [];
-
-        // Fetch the data from the JSON file
-        fetch('assets/plots/actors_age_data.json')
+    
+        fetch('actors_age_data.json')
             .then(response => {
                 if (!response.ok) throw new Error('Network response was not ok');
                 return response.json();
             })
             .then(data => {
+                console.log('Data loaded:', data);
                 allData = data;
-                updateGraph(); // Initialize the chart with the first period
+                updateGraph();
             })
             .catch(error => console.error('Error loading data:', error));
-
-        // Function to update the bar plot
+    
         function updateGraph() {
-            // Get the selected period from the slider
             const slider = document.getElementById("period-slider");
             const selectedPeriod = periods[slider.value];
             document.getElementById("period-label").innerText = `Period: ${selectedPeriod}`;
-
-            // Filter the data for the selected period
-            const filteredData = allData.filter(d => d.Period === selectedPeriod);
-
-            // Prepare data for the plot
+    
+            // Filter and validate data
+            const filteredData = allData
+                .filter(d => d.Period === selectedPeriod && !isNaN(d.Age));
+    
+            if (filteredData.length === 0) {
+                console.warn('No valid data available for the selected period:', selectedPeriod);
+                Plotly.newPlot("age-distribution-graph", [], { title: 'No Data Available' });
+                return;
+            }
+    
+            console.log('Filtered data:', filteredData);
+    
             const maleData = filteredData.filter(d => d.Gender === "M").map(d => d.Age);
             const femaleData = filteredData.filter(d => d.Gender === "F").map(d => d.Age);
-
+    
+            console.log('Male data:', maleData);
+            console.log('Female data:', femaleData);
+    
             const traceMale = {
                 x: maleData,
                 type: "histogram",
@@ -73,7 +80,7 @@
                 marker: { color: "orange" },
                 opacity: 0.5
             };
-
+    
             const traceFemale = {
                 x: femaleData,
                 type: "histogram",
@@ -81,17 +88,16 @@
                 marker: { color: "green" },
                 opacity: 0.5
             };
-
+    
             const layout = {
                 title: `Distribution of Actors' Ages for the Period ${selectedPeriod}`,
                 barmode: "overlay",
                 xaxis: { title: "Actor Age" },
                 yaxis: { title: "Density" }
             };
-
-            // Plot the graph
+    
             Plotly.newPlot("age-distribution-graph", [traceMale, traceFemale], layout);
         }
-    </script>
+    </script>    
 </body>
 </html>
