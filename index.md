@@ -46,4 +46,6 @@ But maybe this ratio swings in favor of actresses depending on the genre of the 
 
 Well... actresses are still in the minority, no matter the genre or the era ! This under representation seems to plateau between 25% and 40% with an average of just 31.44% of female actresses per movie !
 
+Now what about the actor's age, do we see a tendency depending on the genre ?
 
+{include_relative assets/plots/actors_age.html %}
