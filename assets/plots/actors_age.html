@@ -9,9 +9,13 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
         .slider-container {
             width: 100%;
-            margin: 0 auto;
+            margin: 20px 0;
         }
         h1 {
             text-align: center;
@@ -22,13 +26,16 @@
     <h1>Age Distribution of Actors</h1>
 
     <!-- Slider for Periods -->
-    <div class="slider-container">
-        <input type="range" id="period-slider" min="0" max="7" step="1" value="0" oninput="updateGraph()" />
-        <!-- <div id="period-label" style="text-align: center; margin-top: 10px;" ></div --> <!-- Removed "Period:" label -->
-    </div>
+    <div class="container">
+        <!-- Slider for Periods -->
+        <div class="slider-container">
+            <input type="range" id="period-slider" min="0" max="7" step="1" value="0" oninput="updateGraph()" style="width: 100%;" />
+            <!--div id="period-label" style="text-align: center; margin-top: 10px;"></div-->
+        </div>
 
-    <!-- Div to hold the bar plot -->
-    <div id="age-distribution-graph"></div>
+        <!-- Div to hold the bar plot -->
+        <div id="age-distribution-graph" style="width: 100%;"></div>
+    </div>
 
     <script>
         const periods = [
