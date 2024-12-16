@@ -48,4 +48,4 @@ Well... actresses are still in the minority, no matter the genre or the era ! Th
 
 Now what about the actor's age, do we see a tendency depending on the genre ?
 
-{include_relative assets/plots/actors_age.html %}
+{% include_relative assets/plots/actors_age.html %}
