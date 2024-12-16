@@ -10,7 +10,7 @@
             margin: 20px;
         }
         .slider-container {
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
         }
         h1 {
@@ -24,7 +24,7 @@
     <!-- Slider for Periods -->
     <div class="slider-container">
         <input type="range" id="period-slider" min="0" max="7" step="1" value="0" oninput="updateGraph()" />
-        <div id="period-label" style="text-align: center; margin-top: 10px;"></div> <!-- Removed "Period:" label -->
+        <!-- <div id="period-label" style="text-align: center; margin-top: 10px;" ></div --> <!-- Removed "Period:" label -->
     </div>
 
     <!-- Div to hold the bar plot -->
@@ -54,7 +54,7 @@
             const slider = document.getElementById("period-slider");
             const selectedPeriodIndex = slider.value;
             const selectedPeriod = periods[slider.value];
-            document.getElementById("period-label").innerText = selectedPeriod;
+            //document.getElementById("period-label").innerText = selectedPeriod;
     
             // Filter and validate data
             const filteredData = allData
