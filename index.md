@@ -76,3 +76,6 @@ Two different models:
 </div>
 
 ## 
+
+
+<script src="assets/js/plot-switcher.js"></script>
