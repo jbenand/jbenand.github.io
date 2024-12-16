@@ -5,7 +5,7 @@ const plotFrame = document.getElementById('plot-frame');
 
 // Define the paths to the HTML files
 const plot1Path = 'assets/plots/feminist_movies_interactive_gpt.html';
-const plot2Path = 'assets/plots/feminist_movies_interactive_gpt_proportion.html';
+const plot2Path = 'assets/plots/feminist_movies_interactive2.html';
 
 // Add event listeners for buttons
 button1.addEventListener('click', () => {
