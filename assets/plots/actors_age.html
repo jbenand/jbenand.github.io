@@ -24,7 +24,7 @@
     <!-- Slider for Periods -->
     <div class="slider-container">
         <input type="range" id="period-slider" min="0" max="7" step="1" value="0" oninput="updateGraph()" />
-        <div id="period-label" style="text-align: center; margin-top: 10px;">1930-1940</div>
+        <div id="period-label" style="text-align: center; margin-top: 10px;"></div> <!-- Removed "Period:" label -->
     </div>
 
     <!-- Div to hold the bar plot -->
@@ -52,8 +52,9 @@
     
         function updateGraph() {
             const slider = document.getElementById("period-slider");
+            const selectedPeriodIndex = slider.value;
             const selectedPeriod = periods[slider.value];
-            document.getElementById("period-label").innerText = `Period: ${selectedPeriod}`;
+            document.getElementById("period-label").innerText = selectedPeriod;
     
             // Filter and validate data
             const filteredData = allData
@@ -65,13 +66,13 @@
                 return;
             }
     
-            console.log('Filtered data:', filteredData);
+            // console.log('Filtered data:', filteredData);
     
             const maleData = filteredData.filter(d => d.Gender === "M").map(d => d.Age);
             const femaleData = filteredData.filter(d => d.Gender === "F").map(d => d.Age);
     
-            console.log('Male data:', maleData);
-            console.log('Female data:', femaleData);
+            // console.log('Male data:', maleData);
+            // console.log('Female data:', femaleData);
     
             const traceMale = {
                 x: maleData,
