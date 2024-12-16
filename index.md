@@ -72,7 +72,7 @@ Two different models:
 </div>
 
 <div id="plot-container">
-  <iframe id="plot-frame" src="assets/plots/feminist_movies_interative_gpt.html"></iframe>
+  <iframe id="plot-frame" src="assets/plots/feminist_movies_interactive_gpt.html" style="width: 100%; height: 800px; border: none;"></iframe>
 </div>
 
 ## 
