@@ -66,17 +66,16 @@ Sounds straightforward, right ? You'd think most movies would pass with flying c
 
 Two different models:
 
-<!-- Button container -->
 <div class="button-container">
   <button id="button1">Model 1</button>
   <button id="button2">Model 2</button>
 </div>
 
-<!-- Plot container -->
 <div id="plot-container">
-  <iframe id="plot-frame" src="assets/plots/feminist_movies_interactive_gpt.html"></iframe>
+  <iframe id="plot-frame" src="assets/plots/feminist_movies_interative_gpt.html"></iframe>
 </div>
 
-<!-- Link to the script -->
-<script src="assets/js/plot-switcher.js"></script>
+## 
 
+
+<script src="assets/js/plot-switcher.js"></script>
