@@ -49,3 +49,17 @@ Well... actresses are still in the minority, no matter the genre or the era ! Th
 Now what about the actor's age, do we see a tendency depending on the genre ?
 
 {% include_relative assets/plots/actors_age.html %}
+
+Regardless of the period, women on screen tend to be younger than their male counterprt. What could explain such noticeable difference in averages ? Could it be related to societal expectations, casting preferences or even the types of roles offered to women copared to men. This pattern raises intriguing questions about representation and the evolution of gender dynamics in the film industry. Let us investigate women representation in movies to deepen our understanding of such dynamics.
+
+# Women representation in movies
+
+## Bechdel test
+
+How can we measure the representation of women in movies ? One metric that is commonly used is the **Bechdel Test**. You might have heard of it, it's a simple yet striking measure of the representation of women in movies. Here's how it works: for a film to pass the Bechdel Test, it needs to meet three criteria:
+
+1. It must have at least two named female characters
+2. These women must talk to each other
+3. And their conversation must be about something other than a man
+
+Sounds straightforward, right ? You'd think most movies would pass with flying colors, but surprisingly, many don't ! This test isn't about calling out individual films but rather highlighting larger trends in storytelling and representation. Now, passing the Bechdel Test doesn't automatically mean a movie is feminist or inclusive, nor does fialing it make a film inherently problematic. Instead, it's a way to spark discussion about ho women are portrayed on screen and whether they are given meaningful rles beyond supporting male characters.
