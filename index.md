@@ -71,4 +71,50 @@ We use this Bechdel Test result to classify if a movie is considered as having a
 Although the Bechdel Test result is a popular measure of classify the representation of women in movies, it is also inherently flawed. Its major flaw that it does not take into account the subject matter (the subject of the conversation) and hence movies that are widely considered as sexist can still pass the test (e.g. *Fifty Shade of Grey* which is known to promote abuse passes the test) while other movies with feminist undertones can still fail the test (e.g. *Eternal Sunshine of the Spotless Mind*). Another major flaw is that the dataset we used to get Bechdel Test results data is user-submitted which leads to certain cognitive biases (e.g. some users might only add movies that pass the Bechdel Test and hence cause an imbalance in the dataset). 
 For these reasons, we create another metric to define if a movie has a good representation of women : the movie has to pass the Bechdel **AND** have at least half of its cast to be female actresses. We then use this classification method to find the relevant words and themes to apply the search every other movie of the dataset.
 
+Two different models:
+
+<div class="button-container">
+  <button id="button1">Model 1</button>
+  <button id="button2">Model 2</button>
+</div>
+
+<div id="plot-container">
+  <iframe id="plot-frame" src="assets/plots/feminist_movies_interative_gpt.html"></iframe>
+</div>
+
+<style>
+    /* Style for the buttons */
+    .button-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .button-container button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Style for the plot container */
+    #plot-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      height: 600px;
+      border: 1px solid #ddd;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style for the iframe */
+    #plot-frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+</style>
+
 ## 
+
+
+<script src="assets/js/plot-switcher.js"></script>
