@@ -75,6 +75,38 @@ Two different models:
   <iframe id="plot-frame" src="assets/plots/feminist_movies_interative_gpt.html"></iframe>
 </div>
 
+<style>
+    /* Style for the buttons */
+    .button-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .button-container button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Style for the plot container */
+    #plot-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      height: 600px;
+      border: 1px solid #ddd;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style for the iframe */
+    #plot-frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+</style>
+
 ## 
 
 
