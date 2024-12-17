@@ -20,14 +20,15 @@
             margin: 5px;
             cursor: pointer;
         }
-        .plot-row {
+        .plot-container {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             margin: 20px 0;
         }
         .plot {
-            width: 100%;
-            margin: 0 2%;
+            width: 80%;
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -37,7 +38,7 @@
         <button onclick="showPlots('gpt')">Show GPT Predictions</button>
         <button onclick="showPlots('svm')">Show SVM Predictions</button>
     </div>
-    <div class="plot-row">
+    <div class="plot-container">
         <div id="bar-plot" class="plot"></div>
         <div id="line-plot" class="plot"></div>
     </div>
@@ -62,3 +63,4 @@
     </script>
 </body>
 </html>
+
