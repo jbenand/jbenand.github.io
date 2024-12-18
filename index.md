@@ -77,7 +77,10 @@ Two different models:
 {% include_relative assets/plots/two_models.html %}
 
 {% include_relative assets/plots/two_models_two_plots.html %}
+### Proportion of Movies that pass the Test Bechdel per Genre
+### Oscar Winners and Nominees 
 
+The Bechdel Test provides a way to assess the representation of women in a film, but it remains limited in evaluating the depth or significance of their roles. For instance, Pacific Rim fails the test due to its lack of female characters, yet Mako Mori plays a pivotal role in the story, serving as more than just a supporting figure to the male protagonist. 
 
 <figure class="center">
     <img src="/assets/img/makomori.gif" alt="makomori" class="center" width="600">
@@ -86,6 +89,7 @@ Two different models:
         </figcaption>
 </figure>
 
+Similarly, Éowyn from The Lord of the Rings stands out as a strong character, despite the film’s broader failure to pass the test. And for example,Twilight passed the test, but Bella is not often considered as a strong female character, as it is said that she relies on men to save and protect her. 
 <figure class="center">
     <img src="/assets/img/twilight.gif" alt="twilight" class="center" width="600">
         <figcaption>
