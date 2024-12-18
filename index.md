@@ -131,3 +131,5 @@ Surprisingly, there are quite a lot of feminist movies !
 <!-- {% include_relative assets/plots/feminist_movies_interactive_dataset_created.html %} -->
 
 {% include_relative assets/plots/lda_visualization.html %}
+
+{% include_relative assets/plots/movie_topic_interactions.html %}
