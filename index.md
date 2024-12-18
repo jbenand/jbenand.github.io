@@ -74,7 +74,7 @@ For these reasons, we create another metric to define if a movie has a good repr
 Two different models:
 
 
-{% include_relative assets/plots/two_models.html %}
+<!-- {% include_relative assets/plots/two_models.html %} -->
 
 {% include_relative assets/plots/two_models_two_plots.html %}
 ### Proportion of Movies that pass the Test Bechdel per Genre
