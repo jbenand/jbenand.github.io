@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Load Plots</title> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #plot-container {
+            width: 80%;
+            height: 500px; /* Adjust height as needed */
+            margin: 20px auto;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Dynamic Plot Loader</h1> -->
+    <!-- <p>Click a button to load the corresponding plot:</p> -->
+
+    <!-- Buttons to load plots -->
+    <div>
+        <button onclick="loadPlot('plot1.html')">1940-1960</button>
+        <button onclick="loadPlot('plot2.html')">1960-1980</button>
+        <button onclick="loadPlot('plot3.html')">1980-2020</button>
+    </div>
+
+    <!-- Container for the iframe -->
+    <div id="plot-container">
+        <iframe id="plot-frame" src="" style="width: 100%; height: 100%; border: none;"></iframe>
+    </div>
+
+    <script>
+        function loadPlot(plotFile) {
+            // Set the source of the iframe to the selected plot file
+            document.getElementById('plot-frame').src = plotFile;
+        }
+    </script>
+</body>
+</html>
