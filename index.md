@@ -77,6 +77,15 @@ Two different models:
 <!-- {% include_relative assets/plots/two_models.html %} -->
 
 {% include_relative assets/plots/two_models_two_plots.html %}
+
+Do you see what I see ? That's right -- progress ! Even though the number of films produced each year has skyrocketed, the percentage of movies with women well represented has also steadily increased over time, nearing almost 40% with the second classification method ! This classification difference creates quite a big difference as they do not always classify the same movie in the same category as can be seen on the Venn diagram below.
+
+<figure class="center">
+    <img src="/assets/img/venn_diagram.png" alt="venn_diagram" class="center" width="600">
+        <figcaption>
+        </figcaption>
+</figure>
+
 ### Proportion of Movies that pass the Test Bechdel per Genre
 ### Oscar Winners and Nominees 
 
