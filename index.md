@@ -108,7 +108,7 @@ Similarly, Éowyn from The Lord of the Rings stands out as a strong character, d
 
 # Feminism in movies 
 
-As the bechdel test has proven itself not being deterministic, we decided to look at feminism in a rather different way… We created our own dataset of feminist movies based on different websites on the internet (each movie of the dataset we created is widely considered as conveying a feminist message). Here below you can see a sample of the movies we have extracted, of the set of images we have put together ourselves. In order to complement this, we used the same number of sample of films that have obtained 0 at the bechdel test. In total, our dataset is made of XXX feminist movies and XXX movies that fail the Bechdel Test. We use this dataset to fine-tune a pre-trained GPT2 model to find the most important features of a feminist movie (and also the features that make a "macho" movie).
+As the bechdel test has proven itself not being deterministic, we decided to look at feminism in a rather different way… We created our own dataset of feminist movies based on different websites on the internet (each movie of the dataset we created is widely considered as conveying a feminist message). Here below you can see a sample of the movies we have extracted, of the set of images we have put together ourselves. In order to complement this, we used the same number of sample of films that have obtained 0 at the bechdel test. In total, our dataset is made of XXX feminist movies and XXX movies that fail the Bechdel Test. We use this dataset to fine-tune a pre-trained GPT2 model to find the most important features of a feminist movie (and also the features that make a "macho" movie) and then apply this model to the entire movie dataset to classify a movie as feminist or not.
 
 <figure class="center">
     <img src="/assets/img/collage_feminist_movies.jpg" alt="Feminism movies collected" class="center" width="600">
@@ -118,6 +118,9 @@ As the bechdel test has proven itself not being deterministic, we decided to loo
 </figure>
 
 ### General Feminism analysis
-{% include_relative assets/plots/feminist_movies_interactive_dataset_created.html %}
+{% include_relative assets/plots/feminism_percentage.html %}
+{% include_relative assets/plots/feminism_linear_regression.html %}
+
+<!-- {% include_relative assets/plots/feminist_movies_interactive_dataset_created.html %} -->
 
 {% include_relative assets/plots/lda_visualization.html %}
