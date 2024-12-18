@@ -109,4 +109,7 @@ As the bechdel test has proven itself not being deterministic, we decided to loo
         </figcaption>
 </figure>
 
+### General Feminism analysis
+{% include_relative assets/plots/feminist_movies_interactive_dataset_created.html %}
+
 {% include_relative assets/plots/lda_visualization.html %}
