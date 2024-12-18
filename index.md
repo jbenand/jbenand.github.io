@@ -117,9 +117,14 @@ As the bechdel test has proven itself not being deterministic, we decided to loo
         </figcaption>
 </figure>
 
-### General Feminism analysis
+## General Feminism analysis
+
+Let us apply the same analysis framework that we used for the representation of women in movies :
+
 {% include_relative assets/plots/feminism_percentage.html %}
 {% include_relative assets/plots/feminism_linear_regression.html %}
+
+Surprisingly, there are quite a lot of feminist movies !
 
 <!-- {% include_relative assets/plots/feminist_movies_interactive_dataset_created.html %} -->
 
