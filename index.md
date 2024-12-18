@@ -126,7 +126,7 @@ Let us apply the same analysis framework that we used for the representation of 
 
 Surprisingly, there are quite a lot of feminist movies ! 
 
-
+{% include_relative assets/plots/percentage_feminism_all_periods.html %}
 
 <!-- {% include_relative assets/plots/feminist_movies_interactive_dataset_created.html %} -->
 
