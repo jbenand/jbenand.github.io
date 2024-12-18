@@ -78,7 +78,6 @@ Two different models:
 
 {% include_relative assets/plots/two_models_two_plots.html %}
 
-{% include_relative assets/plots/lda_visualization.html %}
 
 ## Feminism in movies 
 
@@ -90,3 +89,5 @@ As the bechdel test has proven itself not being deterministic, we decided to loo
             Feminism movies collected
         </figcaption>
 </figure>
+
+{% include_relative assets/plots/lda_visualization.html %}
