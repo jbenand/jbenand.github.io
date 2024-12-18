@@ -77,3 +77,16 @@ Two different models:
 {% include_relative assets/plots/two_models.html %}
 
 {% include_relative assets/plots/two_models_two_plots.html %}
+
+
+## Feminism in movies 
+
+As the bechdel test has proven itself not being deterministic, we decided to look at feminism in a rather different way… We created our own dataset of feminist movies based on different websites on the internet. Here below you can see a sample of the movies we have extracted, of the set of images we have put together ourselves. In order to complement this, we used the same number of sample of films that have obtained 0 at the bechdel test.
+
+<figure class="center">
+    <img src="/assets/img/collage_feminist_movies.jpg" alt="Feminism movies collected" class="center" width="600">
+        <figcaption>
+            Feminism movies collected
+        </figcaption>
+</figure>
+
