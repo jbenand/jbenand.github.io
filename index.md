@@ -163,8 +163,15 @@ As the bechdel test has proven itself not being deterministic, we decided to loo
 
 Let us apply the same analysis framework that we used for the representation of women in movies :
 
-{% include_relative assets/plots/feminism_percentage.html %}
-{% include_relative assets/plots/feminism_linear_regression.html %}
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <div style="flex: 1; margin-right: 10px;">
+    {% include_relative assets/plots/feminism_percentage.html %}
+  </div>
+  <div style="flex: 1; margin-left: 10px;">
+    {% include_relative assets/plots/feminism_linear_regression.html %}
+  </div>
+</div>
+
 
 Surprisingly, there are quite a lot of feminist movies ! 
 
