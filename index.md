@@ -77,7 +77,11 @@ Although the Bechdel Test result is a popular measure of classify the representa
 For these reasons, we create another metric to define if a movie has a good representation of women : the movie has to pass the Bechdel **AND** have at least half of its cast to be female actresses. We then use this classification method to find the relevant words and themes to apply the search every other movie of the dataset.
 
 
-In order to represent these 2 metrics, we used 2 different methods : GPT2 to classify feminist movies based on the Bechdel test and classification with women proportion taken into account with SVM:
+In order to represent these 2 metrics, we used 2 different methods : GPT2 to classify feminist movies based on the Bechdel test and classification with women proportion taken into account with SVM.
+
+1) We turned to GPT-2, a pre-trained language model that specializes in generating and understanding natural language. GPT-2 was chosen for its ability to analyze the semantics of movie plot summaries, helping us identify nuanced themes and context that go beyond simple keyword matching. By fine-tuning GPT-2 on a custom dataset of feminist movies, we were able to improve its ability to recognize feminist elements in films, providing a richer and more accurate classification than the Bechdel Test alone.
+
+This method is especially valuable in addressing the limitations of the Bechdel Test, which can miss films with feminist messages that might not meet its criteria. GPT-2 allows us to go beyond surface-level analysis and dive deeper into the language of movie summaries, identifying key themes, character arcs, and narrative structures that reflect feminist ideas.
 
 Two different models:
 
