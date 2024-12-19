@@ -175,6 +175,17 @@ This surprising result leaves us wondering why, therefore in order to better und
 
 {% include_relative assets/plots/lda_visualization.html %}
 
+By extracting the 2 principal components of the words, we observe that clearly in both cases there is a connotation : negative in PC1 and positive in PC2. This would explain them both being averaged out.
+
+## Graph theory
+
+Using graph theory can help us understand how feminist and non-feminist movies are linked and what features determine if a movie is feminist or not.
+First of all, we can compare the three different models that were trained. In this graph, each model is linked to all of the movies it has predicted as feminist. We can see that only a fraction of the movies are predicted as feminist by all three models. This shows how complex it can be to define a feminist movie.
+
+{% include_relative assets/plots/graph_movie_model_predictions.html %}
+
+One way to understand the predictions is by finding the main topics/themes in the summary, linking them and plotting this into a network to show the interactions between these topics. We have implemented this by doing a keyphrase search in summaries of movies predicted feminist by the last model. The module KeyBERT allows to achieve this and obtain results such as : [('katniss peeta', 0.5887), ('tribute katniss', 0.5791), ('peeta katniss', 0.5781), ('katniss volunteers', 0.5623), ('turning katniss', 0.5519)] for the summary of the Hunger games, where the number represents the intensity.  Finally, using graphs and linking each word from a keyphrase together, we can analyse different important themes and understand links in movies.
+
 {% include_relative assets/plots/movie_topic_interactions.html %}
 
 
