@@ -235,11 +235,24 @@ First of all, we can compare the three different models that were trained. In th
 
 {% include_relative assets/plots/graph_movie_model_predictions.html %}
 
-One way to understand the predictions is by finding the main topics/themes in the summary, linking them and plotting this into a network to show the interactions between these topics. We have implemented this by doing a keyphrase search in summaries of movies predicted feminist by the last model. The module KeyBERT allows to achieve this and obtain results such as : [('katniss peeta', 0.5887), ('tribute katniss', 0.5791), ('peeta katniss', 0.5781), ('katniss volunteers', 0.5623), ('turning katniss', 0.5519)] for the summary of the Hunger games, where the number represents the intensity.  Finally, using graphs and linking each word from a keyphrase together, we can analyse different important themes and understand links in movies.
+But how does the model determine if a movie is feminist or not ? One way of understanding how the third model determines its predictions is by finding the main topics/themes in the summary as keyphrases. Then, each set of words in a single keyphrase can be linked and plotted into a network to show the interactions between the topics. 
+We have implemented this and done a keyphrase search with the help of the module KeyBERT in the summaries of 20 movies predicted as feminist by the model. KeyBERT allows us to obtain keyphrases of 2 words that are representative of the main text such as : ('katniss volunteers', 0.5623) for the summary of the Hunger games, where the number represents the relevance score.  Finally, by linking these words together, a network graph can be plotted.
+
+{% include_relative assets/plots/movie_topic_interactions.html %}
+
+By selecting movies and looking around in the plots, a trend can be observed. Usually, a feminine character is represented and action words are linked to it. Of course, sometimes the plots do not bring much information as they rely on the summary.
+
+
+Another way of understanding the differences between feminist and non-feminist movies is by looking at the main features provided by the dataset such as box office revenue, runtime, year, country, languages and genre. Using a parallel coordinates plot is a great way of viewing how a set of feminist and non-feminist movies vary within these features and seeing the differences between both groups.
+
 
 <div style="width: 100%; height: 600px;">
     {% include_relative assets/plots/parallel_plot.html %}
 </div>
+
+The plot was created on a subset of 1’000 movies for each group (feminist or not). It can be observed that there is a strong similarity in movie runtime and box office revenue whereas the countries, languages and genre vary greatly within and in between the groups. This shows that feminist movies are not that different compared to others with regards to the categorical features but rather depend on the movie plots and the message that they portray.
+
+
 
 <h1>Welcome to Movie Summaries</h1>
 Finally, we have designed a simple tool which allows to pick a movie among a small subset, read its summary and visualize gpt2's prediction in the feminism response part. Have fun navigating!
