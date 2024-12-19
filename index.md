@@ -142,3 +142,57 @@ Surprisingly, there are quite a lot of feminist movies !
 {% include_relative assets/plots/lda_visualization.html %}
 
 {% include_relative assets/plots/movie_topic_interactions.html %}
+
+
+
+
+
+<h1>Welcome to Movie Summaries</h1>
+
+<p>Select a movie from the dropdown to view its summary and feminism response:</p>
+
+<!-- Dropdown for selecting a movie -->
+<select id="movieDropdown">
+  <option value="">Select a movie</option>
+</select>
+
+<div id="movieSummary">
+  <!-- Movie Summary and Feminism Response will be displayed here -->
+</div>
+
+<script>
+// Fetch the movies data from the JSON file
+fetch('{{ "/assets/plots/movies.json" | relative_url }}')
+  .then(response => response.json())
+  .then(movies => {
+    // Populate the dropdown with movie names
+    const dropdown = document.getElementById('movieDropdown');
+    movies.forEach(movie => {
+      const option = document.createElement('option');
+      option.value = movie['Movie name'];
+      option.text = movie['Movie name'];
+      dropdown.appendChild(option);
+    });
+
+    // Event listener to update movie summary on dropdown change
+    dropdown.addEventListener('change', function() {
+      const selectedMovie = this.value;
+      const movieSummaryDiv = document.getElementById('movieSummary');
+
+      if (selectedMovie) {
+        // Find the selected movie from the array
+        const movie = movies.find(m => m['Movie name'] === selectedMovie);
+        
+        // Display movie summary and feminism response
+        movieSummaryDiv.innerHTML = `
+          <h2>${movie['Movie name']}</h2>
+          <p><strong>Summary:</strong> ${movie['Summaries']}</p>
+          <p><strong>Feminism Response:</strong> ${movie['feminism response']}</p>
+        `;
+      } else {
+        movieSummaryDiv.innerHTML = ''; // Clear content if no movie is selected
+      }
+    });
+  })
+  .catch(error => console.log('Error loading movie data:', error));
+</script>
