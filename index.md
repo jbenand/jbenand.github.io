@@ -18,6 +18,14 @@ So, buckle up for a journey through the history of cinema and what it reveals (o
 
 To dive into these questions, we have access to data on over 80,000 films, covering details like release year, country of production, genre, plots, actor information, and much more.
 
+Using this dataset, we combine traditional methods with advanced tools like GPT-2 for textual analysis and machine learning models such as SVM for classification tasks. These tools allow us to explore trends in sentiment, theme, and representation on a deeper level.
+
+Ultimately, this project is not just about uncovering patterns but also about asking critical questions: What does progress look like? How do we define meaningful representation? And most importantly, is cinema evolving to reflect the diverse realities of its audience, or are we still trapped in old narratives?
+
+Buckle up for a data-driven journey through the history of cinema, what it reveals (or doesn’t) about the role of women on screen, and the stories we’ve been telling ourselves all along.
+
+
+
 
 <figure class="center">
     <img src="/assets/img/fallen_angels.jpg" alt="Fallen angels by Wong Kar Wai" class="center" width="600">
@@ -67,6 +75,8 @@ How can we measure the representation of women in movies ? One metric that is co
 
 Sounds straightforward, right ? You'd think most movies would pass with flying colors, but surprisingly, many don't ! This test isn't about calling out individual films but rather highlighting larger trends in storytelling and representation. Now, passing the Bechdel Test doesn't automatically mean a movie is feminist or inclusive, nor does failing it make a film inherently problematic. Instead, it's a way to spark discussion about ho women are portrayed on screen and whether they are given meaningful rles beyond supporting male characters.
 
+While other tests, such as the Mako Mori Test—which evaluates whether a female character has her own narrative arc independent of supporting a male character—or the DuVernay Test, which assesses the inclusion of characters of color in fully realized roles, provide valuable insights, we chose to focus on the Bechdel Test for its simplicity and widespread use. This makes it an accessible starting point for exploring broader trends in gender representation.
+
 ## Classification
 
 We use this Bechdel Test result to classify if a movie is considered as having a good representation of women or not. However, not every movie in the dataset that we are provided with has a Bechdel Test result. Thus, we look through the plot summaries of the movies on which we have Bechdel Test information to find out the defining words and themes of movies that pass and fail the test and then search for these elements in the plot summaries of the other movies of the dataset to classify them as having a good representation of women or not.
@@ -75,7 +85,13 @@ Although the Bechdel Test result is a popular measure of classify the representa
 For these reasons, we create another metric to define if a movie has a good representation of women : the movie has to pass the Bechdel **AND** have at least half of its cast to be female actresses. We then use this classification method to find the relevant words and themes to apply the search every other movie of the dataset.
 
 
-In order to represent these 2 metrics, we used 2 different methods : GPT2 to classify feminist movies based on the Bechdel test and classification with women proportion taken into account with SVM:
+In order to represent these 2 metrics, we used 2 different methods : GPT2 to classify feminist movies based on the Bechdel test and classification with women proportion taken into account with SVM.
+
+1) We turned to GPT-2, a pre-trained language model that specializes in generating and understanding natural language. GPT-2 was chosen for its ability to analyze the semantics of movie plot summaries, helping us identify nuanced themes and context that go beyond simple keyword matching. By fine-tuning GPT-2 on a custom dataset of feminist movies, we were able to improve its ability to recognize feminist elements in films, providing a richer and more accurate classification than the Bechdel Test alone.
+
+This method is especially valuable in addressing the limitations of the Bechdel Test, which can miss films with feminist messages that might not meet its criteria. GPT-2 allows us to go beyond surface-level analysis and dive deeper into the language of movie summaries, identifying key themes, character arcs, and narrative structures that reflect feminist ideas.
+
+2) SVM was selected as it excels in handling binary classification tasks using numerical and categorical input features. For the second metric—where female cast proportion is included—SVM provides a straightforward and interpretable model to classify movies with high accuracy.
 
 Two different models:
 
@@ -85,6 +101,7 @@ Two different models:
 | F1 Score            | 0.61                   | ???              | 
 
 
+The GPT-2 model achieved an accuracy of 0.82 and an F1 score of 0.61, indicating its strength in understanding natural language but leaving room for improvement in identifying less explicit feminist elements. The SVM model, trained on cast proportion and Bechdel results, provided an alternative approach, achieving an accuracy of [???] and an F1 score of [???]. Together, these models offer complementary insights into the representation of women in films, with GPT-2 focusing on semantic analysis and SVM addressing numerical and categorical patterns.
 
 <!-- {% include_relative assets/plots/two_models.html %} -->
 
@@ -95,6 +112,7 @@ Do you see what I see ? That's right -- progress ! Even though the number of fil
 <figure class="center">
     <img src="/assets/img/venn_diagram.png" alt="venn_diagram" class="center" width="600">
         <figcaption>
+        Venn Diagram of both models
         </figcaption>
 </figure>
 
@@ -142,7 +160,7 @@ Let’s look at these percentages by genre: Romance films rank first in terms of
 
 {% include_relative assets/plots/percentage_feminism_all_periods.html %}
 
-
+{% include_relative assets/plots/combined_oscar_feminist_pie_charts.html %}
 
 Ladies and gentlemen, once again, the Oscars! 🎬 Half of the nominees are feminist—pretty impressive! But when it comes to taking home the Best Picture award? Let’s just say the numbers aren’t quite ready for their acceptance speech.This begs the question: Is it enough to be nominated, or will we see a shift where feminist films become the new norm for winners?
 
@@ -191,15 +209,16 @@ These findings present a nuanced understanding of the sentiment and thematic dif
 
 ## Graph theory
 
-Using graph theory can help us understand how feminist and non-feminist movies are linked and what features determine if a movie is feminist or not.
+Graph theory gives a quite powerful framework to analyze complex relationships and structures within movie datasets. By representing actors, characters, or scenes as nodes and their interactions as edges, we can uncover patterns of collaboration, centrality, and representation. This approach enriches our analysis by offering a deeper understanding of how gender dynamics are interwoven within the fabric of storytelling.
+This approach can help us understand how feminist and non-feminist movies are linked and what features determine if a movie is feminist or not.
+
 First of all, we can compare the three different models that were trained. In this graph, each model is linked to all of the movies it has predicted as feminist. We can see that only a fraction of the movies are predicted as feminist by all three models. This shows how complex it can be to define a feminist movie.
 
 {% include_relative assets/plots/graph_movie_model_predictions.html %}
 
 One way to understand the predictions is by finding the main topics/themes in the summary, linking them and plotting this into a network to show the interactions between these topics. We have implemented this by doing a keyphrase search in summaries of movies predicted feminist by the last model. The module KeyBERT allows to achieve this and obtain results such as : [('katniss peeta', 0.5887), ('tribute katniss', 0.5791), ('peeta katniss', 0.5781), ('katniss volunteers', 0.5623), ('turning katniss', 0.5519)] for the summary of the Hunger games, where the number represents the intensity.  Finally, using graphs and linking each word from a keyphrase together, we can analyse different important themes and understand links in movies.
 
-{% include_relative assets/plots/movie_topic_interactions.html %}
-
+{% include_relative assets/plots/parallel_plot.html %}
 
 
 
@@ -253,3 +272,24 @@ fetch('{{ "/assets/plots/movies_summaries_feminism.json" | relative_url }}')
   })
   .catch(error => console.log('Error loading movie data:', error));
 </script>
+
+
+# Conclusion 
+
+In this exploration of women’s representation in cinema, we’ve navigated through various metrics, from the Bechdel Test with more advanced machine learning techniques like GPT-2 and SVM, to understand how women are portrayed on screen across time and genres. While there has been progress, the data reveals that gender inequality remains a persistent issue in the film industry, with women still underrepresented in major roles and often cast in secondary or stereotypical positions.
+
+Despite the flaws in the Bechdel Test, these methods have provided valuable insights into broader trends in representation. By also examining sentiment, genre, and country-specific data, we’ve gained a more nuanced understanding of how feminism and female representation intersect with cultural and cinematic factors.
+
+Ultimately, this analysis raises important questions about how far we've come and how much further we have to go. While the percentage of feminist films and those with strong female characters is on the rise, the industry still has a long way to go to achieve true gender equality on screen. This research serves as a step toward further exploration and, hopefully, continued progress in the portrayal of women in cinema.
+
+And as we wrap up, let’s channel Wonder Woman—lassoing the truth about representation and smashing the stereotypes, one reel at a time. 💪🎥
+
+
+
+
+<figure class="center">
+    <img src="/assets/img/galgadot.gif" alt="galgadot" class="center" width="600">
+        <figcaption>
+            Gal Gadot in Wonderwoman
+        </figcaption>
+</figure>
