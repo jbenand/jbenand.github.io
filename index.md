@@ -162,7 +162,7 @@ Surprisingly, there are quite a lot of feminist movies !
 
 <script>
 // Fetch the movies data from the JSON file
-fetch('{{ "/assets/plots/movies.json" | relative_url }}')
+fetch('{{ "/assets/plots/movies_summaries_feminism.json" | relative_url }}')
   .then(response => response.json())
   .then(movies => {
     // Populate the dropdown with movie names
