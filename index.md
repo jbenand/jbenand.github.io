@@ -67,6 +67,8 @@ How can we measure the representation of women in movies ? One metric that is co
 
 Sounds straightforward, right ? You'd think most movies would pass with flying colors, but surprisingly, many don't ! This test isn't about calling out individual films but rather highlighting larger trends in storytelling and representation. Now, passing the Bechdel Test doesn't automatically mean a movie is feminist or inclusive, nor does failing it make a film inherently problematic. Instead, it's a way to spark discussion about ho women are portrayed on screen and whether they are given meaningful rles beyond supporting male characters.
 
+While other tests, such as the Mako Mori Test—which evaluates whether a female character has her own narrative arc independent of supporting a male character—or the DuVernay Test, which assesses the inclusion of characters of color in fully realized roles, provide valuable insights, we chose to focus on the Bechdel Test for its simplicity and widespread use. This makes it an accessible starting point for exploring broader trends in gender representation.
+
 ## Classification
 
 We use this Bechdel Test result to classify if a movie is considered as having a good representation of women or not. However, not every movie in the dataset that we are provided with has a Bechdel Test result. Thus, we look through the plot summaries of the movies on which we have Bechdel Test information to find out the defining words and themes of movies that pass and fail the test and then search for these elements in the plot summaries of the other movies of the dataset to classify them as having a good representation of women or not.
@@ -142,8 +144,6 @@ Surprisingly, there are quite a lot of feminist movies !
 Let’s look at these percentages by genre: Romance films rank first in terms of the percentage of feminist films, reaching about 70%! Surprising? Musical films come in second on average. These types of films generally feature a man and a woman as leads, without one being there to complement the other. In contrast, only 30% of action and adventure films, which are often male-driven, are considered feminist.We find roughly the same ranking for films that pass the Bechdel test.
 
 {% include_relative assets/plots/percentage_feminism_all_periods.html %}
-
-
 
 Ladies and gentlemen, once again, the Oscars! 🎬 Half of the nominees are feminist—pretty impressive! But when it comes to taking home the Best Picture award? Let’s just say the numbers aren’t quite ready for their acceptance speech.This begs the question: Is it enough to be nominated, or will we see a shift where feminist films become the new norm for winners?
 
