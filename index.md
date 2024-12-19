@@ -267,3 +267,12 @@ fetch('{{ "/assets/plots/movies_summaries_feminism.json" | relative_url }}')
   })
   .catch(error => console.log('Error loading movie data:', error));
 </script>
+
+
+# Conclusion 
+
+In this exploration of women’s representation in cinema, we’ve navigated through various metrics, from the Bechdel Test to more advanced machine learning techniques like GPT-2 and SVM, to understand how women are portrayed on screen across time and genres. While there has been progress, the data reveals that gender inequality remains a persistent issue in the film industry, with women still underrepresented in major roles and often cast in secondary or stereotypical positions.
+
+Despite the flaws in the Bechdel Test, these methods have provided valuable insights into broader trends in representation. By also examining sentiment, genre, and country-specific data, we’ve gained a more nuanced understanding of how feminism and female representation intersect with cultural and cinematic factors.
+
+Ultimately, this analysis raises important questions about how far we've come and how much further we have to go. While the percentage of feminist films and those with strong female characters is on the rise, the industry still has a long way to go to achieve true gender equality on screen. This research serves as a step toward further exploration and, hopefully, continued progress in the portrayal of women in cinema.
