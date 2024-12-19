@@ -140,7 +140,7 @@ Let’s look at these percentages by genre: Romance films rank first in terms of
 {% include_relative assets/plots/percentage_feminism_all_periods.html %}
 
 
-{% include_relative assets/plots/combined_oscar_feminist_pie_charts.html %}
+<!-- {% include_relative assets/plots/combined_oscar_feminist_pie_charts.html %}-->
 
 Ladies and gentlemen, once again, the Oscars! 🎬 Half of the nominees are feminist—pretty impressive! But when it comes to taking home the Best Picture award? Let’s just say the numbers aren’t quite ready for their acceptance speech.This begs the question: Is it enough to be nominated, or will we see a shift where feminist films become the new norm for winners?
 
