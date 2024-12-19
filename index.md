@@ -91,6 +91,8 @@ In order to represent these 2 metrics, we used 2 different methods : GPT2 to cla
 
 This method is especially valuable in addressing the limitations of the Bechdel Test, which can miss films with feminist messages that might not meet its criteria. GPT-2 allows us to go beyond surface-level analysis and dive deeper into the language of movie summaries, identifying key themes, character arcs, and narrative structures that reflect feminist ideas.
 
+2) SVM was selected as it excels in handling binary classification tasks using numerical and categorical input features. For the second metric—where female cast proportion is included—SVM provides a straightforward and interpretable model to classify movies with high accuracy.
+
 Two different models:
 
 | Measure         |  Model 1 (GPT-2) | Model 2 (SVM) |
@@ -99,6 +101,7 @@ Two different models:
 | F1 Score            | 0.61                   | ???              | 
 
 
+The GPT-2 model achieved an accuracy of 0.82 and an F1 score of 0.61, indicating its strength in understanding natural language but leaving room for improvement in identifying less explicit feminist elements. The SVM model, trained on cast proportion and Bechdel results, provided an alternative approach, achieving an accuracy of [???] and an F1 score of [???]. Together, these models offer complementary insights into the representation of women in films, with GPT-2 focusing on semantic analysis and SVM addressing numerical and categorical patterns.
 
 <!-- {% include_relative assets/plots/two_models.html %} -->
 
