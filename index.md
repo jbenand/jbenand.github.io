@@ -71,7 +71,15 @@ We use this Bechdel Test result to classify if a movie is considered as having a
 Although the Bechdel Test result is a popular measure of classify the representation of women in movies, it is also inherently flawed. Its major flaw that it does not take into account the subject matter (the subject of the conversation) and hence movies that are widely considered as sexist can still pass the test (e.g. *Fifty Shade of Grey* which is known to promote abuse passes the test) while other movies with feminist undertones can still fail the test (e.g. *Eternal Sunshine of the Spotless Mind*). Another major flaw is that the dataset we used to get Bechdel Test results data is user-submitted which leads to certain cognitive biases (e.g. some users might only add movies that pass the Bechdel Test and hence cause an imbalance in the dataset). 
 For these reasons, we create another metric to define if a movie has a good representation of women : the movie has to pass the Bechdel **AND** have at least half of its cast to be female actresses. We then use this classification method to find the relevant words and themes to apply the search every other movie of the dataset.
 
+
+In order to represent these 2 metrics, we used 2 different methods : GPT2 to classify feminist movies based on the Bechdel test and classification with women proportion taken into account with SVM:
 Two different models:
+
+| Measure         |  Model 1 (GPT-2) | Model 2 (SVM) |
+|--------------------|---------------------|-----------------|
+| Accuracy            | 0.82               | ???             |
+| F1 Score            | 0.61                   | ???              | 
+
 
 
 <!-- {% include_relative assets/plots/two_models.html %} -->
