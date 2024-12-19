@@ -107,7 +107,7 @@ The Bechdel Test provides a way to assess the representation of women in a film,
         </figcaption>
 </figure>
 
-Similarly, Éowyn from The Lord of the Rings stands out as a strong character, despite the film’s broader failure to pass the test. And for example,Twilight passed the test, but Bella is not often considered as a strong female character, as it is said that she relies on men to save and protect her. 
+Similarly, Éowyn from The Lord of the Rings stands out as a strong character, despite the film’s broader failure to pass the test. And for example,Twilight passed the test, but Bella is not often considered as a strong female character, as it is said that she relies on men to "save and protect" her. 
 <figure class="center">
     <img src="/assets/img/twilight.gif" alt="twilight" class="center" width="600">
         <figcaption>
@@ -117,7 +117,7 @@ Similarly, Éowyn from The Lord of the Rings stands out as a strong character, d
 
 # Feminism in movies 
 
-As the bechdel test has proven itself not being deterministic, we decided to look at feminism in a rather different way… We created our own dataset of feminist movies based on different websites on the internet (each movie of the dataset we created is widely considered as conveying a feminist message). Here below you can see a sample of the movies we have extracted, of the set of images we have put together ourselves. In order to complement this, we used the same number of sample of films that have obtained 0 at the bechdel test. In total, our dataset is made of XXX feminist movies and XXX movies that fail the Bechdel Test. We use this dataset to fine-tune a pre-trained GPT2 model to find the most important features of a feminist movie (and also the features that make a "macho" movie) and then apply this model to the entire movie dataset to classify a movie as feminist or not.
+As the bechdel test has proven itself not being deterministic, we decided to look at feminism in a rather different way… We created our own dataset of feminist movies based on different websites on the internet (each movie of the dataset we created is widely considered as conveying a feminist message). Here below you can see a sample of the movies we have extracted, of the set of images we have put together ourselves. In order to complement this, we used the same number of sample of films that have obtained 0 at the bechdel test. In total, our dataset is made of 296 feminist movies and 296 movies that fail the Bechdel Test. We use this dataset to fine-tune a pre-trained GPT2 model to find the most important features of a feminist movie (and also the features that make a "macho" movie), working mostly on the semantics of the sentences, then apply this model to the entire movie dataset to classify a movie as feminist or not.
 
 <figure class="center">
     <img src="/assets/img/collage_feminist_movies.jpg" alt="Feminism movies collected" class="center" width="600">
@@ -139,6 +139,10 @@ Let’s look at these percentages by genre: Romance films rank first in terms of
 
 {% include_relative assets/plots/percentage_feminism_all_periods.html %}
 
+
+{% include_relative assets/plots/combined_oscar_feminist_pie_charts.html %}
+
+Ladies and gentlemen, once again, the Oscars! 🎬 Half of the nominees are feminist—pretty impressive! But when it comes to taking home the Best Picture award? Let’s just say the numbers aren’t quite ready for their acceptance speech.This begs the question: Is it enough to be nominated, or will we see a shift where feminist films become the new norm for winners?
 
 <!-- {% include_relative assets/plots/feminist_movies_interactive_dataset_created.html %} -->
 
@@ -193,6 +197,7 @@ One way to understand the predictions is by finding the main topics/themes in th
 
 
 <h1>Welcome to Movie Summaries</h1>
+Finally, we have designed a simple tool which allows to pick a movie among a small subset, read its summary and visualize gpt2's prediction in the feminism response part. Have fun navigating!
 
 <p>Select a movie from the dropdown to view its summary and feminism response:</p>
 
