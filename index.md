@@ -103,6 +103,10 @@ Two different models:
 
 The GPT-2 model achieved an accuracy of 0.82 and an F1 score of 0.61, indicating its strength in understanding natural language but leaving room for improvement in identifying less explicit feminist elements. The SVM model, trained on cast proportion and Bechdel results, provided an alternative approach, achieving an accuracy of [???] and an F1 score of [???]. Together, these models offer complementary insights into the representation of women in films, with GPT-2 focusing on semantic analysis and SVM addressing numerical and categorical patterns.
 
+{% include_relative assets/plots/svm_confusion_matrix.html %}
+{% include_relative assets/plots/gpt2_confusion_matrix.html %}
+
+
 <!-- {% include_relative assets/plots/two_models.html %} -->
 
 {% include_relative assets/plots/two_models_two_plots.html %}
