@@ -38,7 +38,7 @@ Each curve shows the average number of male and female actors per movie. Althoug
 
 {% include_relative assets/plots/female_to_male_actor_ratio_per_country.html %}
 
-Now, looking at the female-to-male ratio among actors in the top five movie-producing countries since 1920, the picture isn't great for women with the ratio usually staying below 1. Some big swings in the early decades can reflect the social and economic changes of the time. Since the 1960s, things start to level off at quite a low ratio and unfortunately, there's been no real progress since. There is some variation across countries with for example France and the UK that occasionnally have slightly better ratios than the US and India. Overall, this graph paints a picture of slow, uneven progress when it comess to the representation of women in global cinema.
+Now, looking at the female-to-male ratio among actors in the top five movie-producing countries since 1920, the picture isn't great for women with the ratio usually staying below 1. Some big swings in the early decades can reflect the social and economic changes of the time. Since the 1960s, things start to level off at quite a low ratio and unfortunately, there's been no real progress since. There is some variation across countries with for example France and the UK that occasionally have slightly better ratios than the US and India. Overall, this graph paints a picture of slow, uneven progress when it comes to the representation of women in global cinema.
 
 But maybe this ratio swings in favor of actresses depending on the genre of the movie ! Let's take a look at the gender repartition for different genders.
 
@@ -50,7 +50,10 @@ Now what about the actor's age, do we see a tendency depending on the genre ?
 
 {% include_relative assets/plots/actors_age.html %}
 
-Regardless of the period, women on screen tend to be younger than their male counterprt. What could explain such noticeable difference in averages ? Could it be related to societal expectations, casting preferences or even the types of roles offered to women copared to men. This pattern raises intriguing questions about representation and the evolution of gender dynamics in the film industry. Let us investigate women representation in movies to deepen our understanding of such dynamics.
+Regardless of the period, women on screen tend to be younger than their male counterpart. This can be see with some explicit examples such as in "Pretty Woman" from 1990 where the male Lead (Richard Gere) was 41 years old and the female Lead (Julia Roberts) was 23 years old. 
+This classic romantic comedy has an 18-year gap between the leads. While it's a fictional story, the age disparity became a hallmark of the genre during that era.
+
+What could explain such noticeable difference in averages ? Could it be related to societal expectations, casting preferences or even the types of roles offered to women compared to men. This pattern raises intriguing questions about representation and the evolution of gender dynamics in the film industry. Let us investigate women representation in movies to deepen our understanding of such dynamics.
 
 # Women representation in movies
 
@@ -178,13 +181,14 @@ To further investigate these patterns, we performed topic detection to uncover t
 
 {% include_relative assets/plots/lda_visualization.html %}
 
-#### Intertopic Distance Map:
+#### Intertopic Distance Map
 By visualizing the intertopic distance using multidimensional scaling, we identified two dominant principal components (PC1 and PC2). These components provide a deeper understanding of how topics diverge:
 - PC1 aligns with themes containing negative sentiment, such as loss, conflict, or hardship.
 - PC2 highlights themes with positive sentiment, such as love, triumph, or resolution.
 This dichotomy reveals why the average compound scores for feminist and non-feminist movies appear neutral despite their underlying asymmetry. Both categories contain a mix of polarizing themes, which, when averaged, cancel out extreme sentiments.
 
 These findings present a nuanced understanding of the sentiment and thematic differences between feminist and non-feminist movies. While both categories exhibit a neutral overall tone, the underlying topics reveal a blend of positive and negative connotations, with feminist movies leaning toward optimism and non-feminist movies reflecting more somber themes.
+
 ## Graph theory
 
 Using graph theory can help us understand how feminist and non-feminist movies are linked and what features determine if a movie is feminist or not.
