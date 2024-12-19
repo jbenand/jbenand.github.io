@@ -230,9 +230,9 @@ First of all, we can compare the three different models that were trained. In th
 
 One way to understand the predictions is by finding the main topics/themes in the summary, linking them and plotting this into a network to show the interactions between these topics. We have implemented this by doing a keyphrase search in summaries of movies predicted feminist by the last model. The module KeyBERT allows to achieve this and obtain results such as : [('katniss peeta', 0.5887), ('tribute katniss', 0.5791), ('peeta katniss', 0.5781), ('katniss volunteers', 0.5623), ('turning katniss', 0.5519)] for the summary of the Hunger games, where the number represents the intensity.  Finally, using graphs and linking each word from a keyphrase together, we can analyse different important themes and understand links in movies.
 
-{% include_relative assets/plots/parallel_plot.html %}
-
-
+<div style="width: 100%; height: 600px;">
+    {% include_relative assets/plots/parallel_plot.html %}
+</div>
 
 <h1>Welcome to Movie Summaries</h1>
 Finally, we have designed a simple tool which allows to pick a movie among a small subset, read its summary and visualize gpt2's prediction in the feminism response part. Have fun navigating!
