@@ -286,3 +286,15 @@ In this exploration of women’s representation in cinema, we’ve navigated thr
 Despite the flaws in the Bechdel Test, these methods have provided valuable insights into broader trends in representation. By also examining sentiment, genre, and country-specific data, we’ve gained a more nuanced understanding of how feminism and female representation intersect with cultural and cinematic factors.
 
 Ultimately, this analysis raises important questions about how far we've come and how much further we have to go. While the percentage of feminist films and those with strong female characters is on the rise, the industry still has a long way to go to achieve true gender equality on screen. This research serves as a step toward further exploration and, hopefully, continued progress in the portrayal of women in cinema.
+
+And as we wrap up, let’s channel Wonder Woman—lassoing the truth about representation and smashing the stereotypes, one reel at a time. 💪🎥
+
+
+
+
+<figure class="center">
+    <img src="/assets/img/galgadot.gif" alt="galgadot" class="center" width="600">
+        <figcaption>
+            Gal Gadot in Wonderwoman
+        </figcaption>
+</figure>
