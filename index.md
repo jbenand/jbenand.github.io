@@ -18,6 +18,14 @@ So, buckle up for a journey through the history of cinema and what it reveals (o
 
 To dive into these questions, we have access to data on over 80,000 films, covering details like release year, country of production, genre, plots, actor information, and much more.
 
+Using this dataset, we combine traditional methods with advanced tools like GPT-2 for textual analysis and machine learning models such as SVM for classification tasks. These tools allow us to explore trends in sentiment, theme, and representation on a deeper level.
+
+Ultimately, this project is not just about uncovering patterns but also about asking critical questions: What does progress look like? How do we define meaningful representation? And most importantly, is cinema evolving to reflect the diverse realities of its audience, or are we still trapped in old narratives?
+
+Buckle up for a data-driven journey through the history of cinema, what it reveals (or doesn’t) about the role of women on screen, and the stories we’ve been telling ourselves all along.
+
+
+
 
 <figure class="center">
     <img src="/assets/img/fallen_angels.jpg" alt="Fallen angels by Wong Kar Wai" class="center" width="600">
