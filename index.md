@@ -95,6 +95,7 @@ Do you see what I see ? That's right -- progress ! Even though the number of fil
 <figure class="center">
     <img src="/assets/img/venn_diagram.png" alt="venn_diagram" class="center" width="600">
         <figcaption>
+        Venn Diagram of both models
         </figcaption>
 </figure>
 
@@ -201,6 +202,13 @@ First of all, we can compare the three different models that were trained. In th
 One way to understand the predictions is by finding the main topics/themes in the summary, linking them and plotting this into a network to show the interactions between these topics. We have implemented this by doing a keyphrase search in summaries of movies predicted feminist by the last model. The module KeyBERT allows to achieve this and obtain results such as : [('katniss peeta', 0.5887), ('tribute katniss', 0.5791), ('peeta katniss', 0.5781), ('katniss volunteers', 0.5623), ('turning katniss', 0.5519)] for the summary of the Hunger games, where the number represents the intensity.  Finally, using graphs and linking each word from a keyphrase together, we can analyse different important themes and understand links in movies.
 
 {% include_relative assets/plots/movie_topic_interactions.html %}
+
+<figure class="center">
+    <img src="/assets/img/parallel_plot.png" alt="parallel_plot" class="center" width="600">
+        <figcaption>
+        Parallel plots of feminist and non feminist movies
+        </figcaption>
+</figure>
 
 
 
