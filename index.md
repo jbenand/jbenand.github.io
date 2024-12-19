@@ -191,7 +191,9 @@ These findings present a nuanced understanding of the sentiment and thematic dif
 
 ## Graph theory
 
-Using graph theory can help us understand how feminist and non-feminist movies are linked and what features determine if a movie is feminist or not.
+Graph theory gives a quite powerful framework to analyze complex relationships and structures within movie datasets. By representing actors, characters, or scenes as nodes and their interactions as edges, we can uncover patterns of collaboration, centrality, and representation. This approach enriches our analysis by offering a deeper understanding of how gender dynamics are interwoven within the fabric of storytelling.
+This approach can help us understand how feminist and non-feminist movies are linked and what features determine if a movie is feminist or not.
+
 First of all, we can compare the three different models that were trained. In this graph, each model is linked to all of the movies it has predicted as feminist. We can see that only a fraction of the movies are predicted as feminist by all three models. This shows how complex it can be to define a feminist movie.
 
 {% include_relative assets/plots/graph_movie_model_predictions.html %}
