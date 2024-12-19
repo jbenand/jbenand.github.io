@@ -192,7 +192,7 @@ One way to understand the predictions is by finding the main topics/themes in th
 
 {% include_relative assets/plots/movie_topic_interactions.html %}
 
-{% include_relative assets/plots/parallel_plot.html %}
+<!-- {% include_relative assets/plots/parallel_plot.html %}-->
 
 
 
