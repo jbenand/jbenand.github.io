@@ -31,9 +31,29 @@
     <div class="container">
         <!-- Slider for Periods -->
         <div class="slider-container">
-            <input type="range" id="period-slider" min="0" max="7" step="1" value="0" oninput="updateGraph()" style="width: 100%;" />
-            <!--div id="period-label" style="text-align: center; margin-top: 10px;"></div-->
+            <input 
+                type="range" 
+                id="period-slider" 
+                min="0" 
+                max="7" 
+                step="1" 
+                value="0" 
+                list="periods-datalist" 
+                oninput="updateGraph()" 
+                style="width: 100%;" 
+            />
+            <datalist id="periods-datalist">
+                <option value="0" label="1930-1940"></option>
+                <option value="1" label="1940-1950"></option>
+                <option value="2" label="1950-1960"></option>
+                <option value="3" label="1960-1970"></option>
+                <option value="4" label="1970-1980"></option>
+                <option value="5" label="1980-1990"></option>
+                <option value="6" label="1990-2000"></option>
+                <option value="7" label="2000-2010"></option>
+            </datalist>
         </div>
+        
 
         <!-- Div to hold the bar plot -->
         <div id="age-distribution-graph" style="width: 100%;"></div>
