@@ -173,11 +173,18 @@ The second plot shows the compound scores which illustrate the mean sentiment sc
 
 This surprising result leaves us wondering why, therefore in order to better understand it, we have performed topic detection and found results in both cases.
 
+#### Topic Detection Insights
+To further investigate these patterns, we performed topic detection to uncover the themes prevalent in both feminist and non-feminist movie summaries.
 
 {% include_relative assets/plots/lda_visualization.html %}
 
-By extracting the 2 principal components of the words, we observe that clearly in both cases there is a connotation : negative in PC1 and positive in PC2. This would explain them both being averaged out.
+#### Intertopic Distance Map:
+By visualizing the intertopic distance using multidimensional scaling, we identified two dominant principal components (PC1 and PC2). These components provide a deeper understanding of how topics diverge:
+- PC1 aligns with themes containing negative sentiment, such as loss, conflict, or hardship.
+- PC2 highlights themes with positive sentiment, such as love, triumph, or resolution.
+This dichotomy reveals why the average compound scores for feminist and non-feminist movies appear neutral despite their underlying asymmetry. Both categories contain a mix of polarizing themes, which, when averaged, cancel out extreme sentiments.
 
+These findings present a nuanced understanding of the sentiment and thematic differences between feminist and non-feminist movies. While both categories exhibit a neutral overall tone, the underlying topics reveal a blend of positive and negative connotations, with feminist movies leaning toward optimism and non-feminist movies reflecting more somber themes.
 ## Graph theory
 
 Using graph theory can help us understand how feminist and non-feminist movies are linked and what features determine if a movie is feminist or not.
