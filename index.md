@@ -73,6 +73,7 @@ For these reasons, we create another metric to define if a movie has a good repr
 
 
 In order to represent these 2 metrics, we used 2 different methods : GPT2 to classify feminist movies based on the Bechdel test and classification with women proportion taken into account with SVM:
+
 Two different models:
 
 | Measure         |  Model 1 (GPT-2) | Model 2 (SVM) |
