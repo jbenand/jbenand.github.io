@@ -135,9 +135,43 @@ Let us apply the same analysis framework that we used for the representation of 
 
 Surprisingly, there are quite a lot of feminist movies ! 
 
+Let’s look at these percentages by genre: Romance films rank first in terms of the percentage of feminist films, reaching about 70%! Surprising? Musical films come in second on average. These types of films generally feature a man and a woman as leads, without one being there to complement the other. In contrast, only 30% of action and adventure films, which are often male-driven, are considered feminist.We find roughly the same ranking for films that pass the Bechdel test.
+
 {% include_relative assets/plots/percentage_feminism_all_periods.html %}
 
+
 <!-- {% include_relative assets/plots/feminist_movies_interactive_dataset_created.html %} -->
+
+
+## Sentiment Analysis
+
+
+Do feminist movies portray a more positive and happy scenario ? One would think that there could be a slight trend towards these kinds of movies or on the contrary that it portrays rebellion and more negative plots. 
+We have analysed the movie summaries from all of the movies predicted as feminist by the 3 ML models created as well as those predicted non-feminist and found a deceiving result : there is no apparent difference in sentiment between feminist and non feminist movies.
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+    <figure style="margin: 0; text-align: center;">
+        <img src="/assets/img/avg_sentiment.png" alt="avg sentiment" width="600">
+        <figcaption>
+            Average sentiment
+        </figcaption>
+    </figure>
+
+    <figure style="margin: 0; text-align: center;">
+        <img src="/assets/img/compound_scores_plot.png" alt="compound sentiment" width="600">
+        <figcaption>
+            Compound scores
+        </figcaption>
+    </figure>
+</div>
+
+By using the sentiment intensity analyser of VADER, we were able to determine whether the movie summaries were presenting a positive, neutral or negative sentiment. The first plot shows that both feminist and non-feminist movies contain mostly neutral sentiment summaries and that feminist movies tend to have a slightly higher rate of positive scores whereas non-feminist movies will tend towards slightly more negative sentiments.
+
+
+The second plot shows the compound scores which illustrate the mean sentiment score value, a positive value represents positive and similar for negative scores and sentiments. Once again, both categories have an average mean score that represents neutral movies and non-feminist movies have a non-symmetric distribution towards negative sentiment.
+
+This surprising result leaves us wondering why, therefore in order to better understand it, we have performed topic detection and found results in both cases.
+
 
 {% include_relative assets/plots/lda_visualization.html %}
 
